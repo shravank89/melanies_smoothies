@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+import requests
 from snowflake.snowpark.functions import col, when_matched
 #from snowflake.snowpark.context import get_active_session
 
@@ -47,4 +48,4 @@ if time_to_insert:
 
 import requests
 smoothiefroot_response = request.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())

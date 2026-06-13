@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+import pandas as pd
 import requests
 from snowflake.snowpark.functions import col, when_matched
 #from snowflake.snowpark.context import get_active_session
